@@ -1,6 +1,6 @@
 # Carouser
 
-Plugin for creating carousel width autoplay
+Plugin for creating carousel with autoplay <a href="https://jsfiddle.net/Umkka/ttm6nka6/">Demo</a>
 
 For using just add <code>&lt;script src="js/slider.min.js">&lt;/script></code> to the body
 
@@ -30,9 +30,11 @@ Markup example:
 Init example:
 <pre>
   $('#slider').rbtSlider({
-		height: '100vh', 
-		'dots': true,
-		'arrows': true,
-		'auto': 3
+		height: '100vh', //carousel height
+		'dots': true, //dot controls
+		'arrows': true, //arrow controls
+		'auto': 3 //autoplay time in seconds
 	});
 </pre>
+
+All of this arguments are not required
