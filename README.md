@@ -3,8 +3,8 @@
 Plugin for creating carousel with autoplay <a href="https://jsfiddle.net/Umkka/ttm6nka6/">Demo</a>
 
 For using just add:
-<code>&lt;script src="js/slider.min.js">&lt;/script></code> to the body
-<code>&lt;link rel="stylesheet" href="css/slider.css"></code> to the head
+<br><code>&lt;script src="js/slider.min.js">&lt;/script></code> to the body
+<br><code>&lt;link rel="stylesheet" href="css/slider.css"></code> to the head
 
 Markup example:
 <pre>
