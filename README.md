@@ -1,4 +1,4 @@
-# Carouser
+# Carousel
 
 Plugin for creating carousel with autoplay <a href="https://jsfiddle.net/Umkka/ttm6nka6/">Demo</a>
 
