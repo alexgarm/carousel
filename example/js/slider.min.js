@@ -1,6 +1,6 @@
 /*
     Name: Slider
-    Plugin Url: https://github.com/umkka/slider
+    Plugin Url: https://github.com/umkka/carousel
     Author: Umkka 
     Author Url: http://umkka.net  
     Year: 2016
