@@ -77,7 +77,7 @@ jQuery.fn.rbtSlider = function(opt){
                 });
 
                 nextItem.addClass(side).delay(700).queue(function(){
-                    $(this).removeClass(side + ' ' + side + 'Item').addClass('active').dequeue();
+                    $(this).removeClass(side + ' ' + side + 'Item').addClass('active').clearQueue();
                 });
 
                 $(this).dequeue();
