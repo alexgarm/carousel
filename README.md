@@ -1,4 +1,4 @@
-# Carousel
+# Carousel ver 1.0.1
 
 Plugin for creating carousel with autoplay <a href="https://jsfiddle.net/Umkka/ttm6nka6/">Demo</a>
 
@@ -40,3 +40,7 @@ Init example:
 </pre>
 
 All of this arguments are not required
+
+# Changelog
+
+1.0.1 Fix animation
