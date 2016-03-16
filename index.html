@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Carousel by umkka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Carousel</h1>
+      <h2 class="project-tagline">jQuery Carousel Plugin (slider / gallery / slideshow)</h2>
+      <a href="https://github.com/umkka/carousel" class="btn">View on GitHub</a>
+      <a href="https://github.com/umkka/carousel/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/umkka/carousel/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="carousel-ver-101" class="anchor" href="#carousel-ver-101" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Carousel ver 1.0.1</h1>
+
+<p>Plugin for creating carousel with autoplay <a href="https://jsfiddle.net/Umkka/ttm6nka6/">Demo</a></p>
+
+<p>For using just add:
+<br><code>&lt;script src="js/slider.min.js"&gt;&lt;/script&gt;</code> to the body
+<br><code>&lt;link rel="stylesheet" href="css/slider.css"&gt;</code> to the head</p>
+
+<p>Markup example:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slider<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>slider<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slItems<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slItem<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background-image: url('img/1.jpg');<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slText<span class="pl-pds">"</span></span>&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                &lt;/<span class="pl-ent">div</span>&gt;
+            &lt;/<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slItem<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background-image: url('img/2.jpg');<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slText<span class="pl-pds">"</span></span>&gt;
+                    Praesent consequat sapien ut dui hendrerit imperdiet.  
+                &lt;/<span class="pl-ent">div</span>&gt;
+            &lt;/<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slItem<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background-image: url('img/3.jpg');<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>slText<span class="pl-pds">"</span></span>&gt;
+                    Morbi aliquam tristique rutrum. 
+                &lt;/<span class="pl-ent">div</span>&gt;
+            &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Init example:</p>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#slider<span class="pl-pds">'</span></span>).<span class="pl-en">rbtSlider</span>({
+        <span class="pl-s"><span class="pl-pds">'</span>height<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>100vh<span class="pl-pds">'</span></span>, <span class="pl-c">//carousel height</span>
+        <span class="pl-s"><span class="pl-pds">'</span>dots<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-c1">true</span>, <span class="pl-c">//dot controls</span>
+        <span class="pl-s"><span class="pl-pds">'</span>arrows<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-c1">true</span>, <span class="pl-c">//arrow controls</span>
+        <span class="pl-s"><span class="pl-pds">'</span>auto<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-c1">3</span> <span class="pl-c">//autoplay time in seconds</span>
+    });</pre></div>
+
+<p>All of this arguments are not required</p>
+
+<h1>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog</h1>
+
+<p>1.0.1 Fix animation</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/umkka/carousel">Carousel</a> is maintained by <a href="https://github.com/umkka">umkka</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
