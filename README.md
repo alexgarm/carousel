@@ -1,4 +1,4 @@
-# Carousel
+# Carousel ver 1.0.2
 
 Plugin for creating carousel with autoplay <a href="https://jsfiddle.net/Umkka/ttm6nka6/">Demo</a>
 
@@ -7,36 +7,51 @@ For using just add:
 <br><code>&lt;link rel="stylesheet" href="css/slider.css"></code> to the head
 
 Markup example:
-<pre>
-	&lt;div class="slider" id="slider">
-		&lt;div class="slItems">
-			&lt;div class="slItem" style="background-image: url('img/1.jpg');">
-				&lt;div class="slText">
+```html
+	<div class="slider" id="slider">
+		<div class="slItems">
+			<div class="slItem" style="background-image: url('img/1.jpg');">
+				<div class="slText">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				&lt;/div>
-			&lt;/div>
-			&lt;div class="slItem" style="background-image: url('img/2.jpg');">
-				&lt;div class="slText">
+				</div>
+			</div>
+			<div class="slItem" style="background-image: url('img/2.jpg');">
+				<div class="slText">
 					Praesent consequat sapien ut dui hendrerit imperdiet.  
-				&lt;/div>
-			&lt;/div>
-			&lt;div class="slItem" style="background-image: url('img/3.jpg');">
-				&lt;div class="slText">
+				</div>
+			</div>
+			<div class="slItem" style="background-image: url('img/3.jpg');">
+				<div class="slText">
 					Morbi aliquam tristique rutrum. 
-				&lt;/div>
-			&lt;/div>
-		&lt;/div>
-	&lt;/div>
-</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+```
 
 Init example:
-<pre>
-  $('#slider').rbtSlider({
-		height: '100vh', //carousel height
+```javascript
+	$('#slider').rbtSlider({
+		'height': '100vh', //carousel height
 		'dots': true, //dot controls
 		'arrows': true, //arrow controls
 		'auto': 3 //autoplay time in seconds
 	});
-</pre>
+```
+
+For using multiple sliders on single page just initialize carousel by class or separate selector with commas:
+```javascript
+	$('.slider').rbtSlider({
+		'height': '100vh', //carousel height
+		'dots': true, //dot controls
+		'arrows': true, //arrow controls
+		'auto': 3 //autoplay time in seconds
+	});
+```
 
 All of this arguments are not required
+
+# Changelog
+
+1.0.2 Adding multiple carousels support
+1.0.1 Fix animation
