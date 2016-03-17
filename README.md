@@ -38,6 +38,7 @@ Init example:
 		'auto': 3 //autoplay time in seconds
 	});
 ```
+All of this arguments are not required
 
 For using multiple sliders on single page just initialize carousel by class or separate selector with commas:
 ```javascript
@@ -48,8 +49,6 @@ For using multiple sliders on single page just initialize carousel by class or s
 		'auto': 3 //autoplay time in seconds
 	});
 ```
-
-All of this arguments are not required
 
 # Changelog
 
