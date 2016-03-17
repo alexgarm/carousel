@@ -53,4 +53,4 @@ For using multiple sliders on single page just initialize carousel by class or s
 # Changelog
 
 1.0.2 Adding multiple carousels support
-1.0.1 Fix animation
+<br>1.0.1 Fix animation
