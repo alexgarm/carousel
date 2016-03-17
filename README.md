@@ -40,7 +40,7 @@ Init example:
 ```
 All of this arguments are not required
 
-For using multiple sliders on single page just initialize carousel by class or separate selector with commas:
+For using multiple sliders on single page just initialize carousel by class or separate selectors with commas:
 ```javascript
 	$('.slider').rbtSlider({
 		'height': '100vh', //carousel height
