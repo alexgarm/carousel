@@ -12,7 +12,7 @@ jQuery.fn.rbtSlider = function(opt){
             if (opt.height) slider.css('height', opt.height);
             slider.find('.slItem').first().addClass('active');
             if (opt.dots) {
-                var count = slider.find('.slItem').size();
+                var count = slider.find('.slItem').length;
                 slider.append(
                     $('<div/>', {
                         class: 'slDots',
