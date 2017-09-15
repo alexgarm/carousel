@@ -5,6 +5,7 @@
     Author Url: http://umkka.net  
     Year: 2016
 */
+/* branch */
 
 jQuery.fn.rbtSlider = function(opt){
         return this.each(function() {
